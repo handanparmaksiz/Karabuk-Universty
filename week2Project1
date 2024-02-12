@@ -1,0 +1,20 @@
+public class Worker{
+  string name;
+  int SecNum;
+  float wage;
+  int Whours;
+  public Worker(string name, int SecNum, float wage, int Whours){
+    this.name=name;
+    this.SecNum=SecNum;
+    this.wage=wage;
+    this.Whours=Whours;
+  }
+  public displayInfo(){
+    Systm.out.println("name:"+name + "Security Number:"+SecNum);
+  }
+  public void displaysalary(){
+   float salary;
+    salary=wage*Whours;
+    Systm.out.println("salary:"+salary);
+  }
+}
