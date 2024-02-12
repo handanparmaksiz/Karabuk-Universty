@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Worker2{
+  string name;
+  int SecNum;
+  float wage;
+  int Whours;
+  public Worker2(string name, int SecNum, float wage, int Whours){
+    this.name=name;
+    this.SecNum=SecNum;
+    this.wage=wage;
+    this.Whours=Whours;
+  }
+    public  void displayInfo(){
+      System.out.println("name:" +name+ "Security Number:"+secNum);
+    }
+    public void displaySalary(){
+      float salary=wage*Whours;
+      System.out.println("salary:" +salary);
+    }
+  }
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+  Worker2 w= new Worker2();
+
+    Scanner scanner= new Scanner(System.in);
+    
+    System.out.println("Enter your name:");
+     w.name=scanner.nextLine();
+    
+    System.out.println("Enter your Security Name:");
+     w.SecNum=scanner.nextInt();
+    
+    System.out.println("Enter your wage:");
+     w.wage=scanner.nextFloat();
+
+    System.out.println("Enter your Working Hours:");
+    w.Whours=scanner.nextInt();
+    
+    w.displayInfo();
+    W.displaySalary();
+  }
+}
